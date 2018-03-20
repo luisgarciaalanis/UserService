@@ -1,0 +1,19 @@
+{
+  "name": "userservice",
+  "version": "0.0.1",
+  "description": "User management microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisgarciaalanis/UserService.git"
+  },
+  "author": "Luis Garcia Alanis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisgarciaalanis/UserService/issues"
+  },
+  "homepage": "https://github.com/luisgarciaalanis/UserService#readme"
+}
