@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/luisgarciaalanis/UserService/issues"
   },
-  "homepage": "https://github.com/luisgarciaalanis/UserService#readme"
+  "homepage": "https://github.com/luisgarciaalanis/UserService#readme",
+  "dependencies": {
+    "sequelize": "^4.37.2",
+    "sequelize-cli": "^4.0.0"
+  }
 }

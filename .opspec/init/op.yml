@@ -1,0 +1,24 @@
+name: init
+description: initializes node dependencies
+inputs:
+  srcDir:
+    dir:
+      default: .
+      description: directory containing the package.json
+run:
+  container:
+    image: { ref: "node:8" }
+    dirs:
+      /src: $(srcDir)
+    workDir: /src
+    cmd:
+      - sh
+      - -ce
+      - |
+        npm install
+        if [ $? = 0 ]; then 
+          if [ -d ./node_modules ]; then
+            chown -R $(stat -c %u:%g ./package.json) ./node_modules
+          fi
+        fi
+        exit $?
